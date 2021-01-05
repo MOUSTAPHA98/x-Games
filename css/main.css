@@ -618,7 +618,7 @@ a.my-btn:hover::after{
     }
 
     .navbar{
-        padding: 0rem 5%;
+        padding: .5rem 5%;
     }
 
     .navbar-expand-lg .navbar-nav .dropdown-menu{
