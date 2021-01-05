@@ -461,7 +461,7 @@ p{
 
 .rotate-img img{
     margin-left: 50%;
-    width: 650px;
+    width: 700px;
     opacity: .15;
     animation: rotating 100s linear infinite;
     -webkit-animation: rotating 100s linear infinite;
