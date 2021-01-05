@@ -392,21 +392,26 @@ p{
 /*===========  SLIDER HERO  ===========*/
 /*=====================================*/
 
-.swiper-slide .my-container{
-    height: 630px;
-    position: relative;
-}
 .swiper-slide{
+    background-color: black;
+    position: relative;
+    height: 600px;
 }
 
-.swiper-slide-container{
-    overflow: hidden;
+.swiper-slide .my-container{
+    position: relative;
+}
+
+.swiper-slide-text{
+    width: 100%;
+    height: 100%;
 }
 
 .rotate-img{
-    z-index: -1;
     position: absolute;
     right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .rotate-img img{
@@ -417,8 +422,7 @@ p{
     -o-animation: rotating 100s linear infinite;
 }
 
-
-.swiper-slide:nth-of-type(1){
+ .swiper-slide:nth-of-type(1){
     background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/cb2077.jpg), center no-repeat;
     background-size: cover !important;
 
@@ -433,6 +437,8 @@ p{
     background-size: cover !important;
     background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/fort.jpg), center no-repeat;
 }
+
+
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev,
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
@@ -466,11 +472,11 @@ a.my-btn{
     color: var(--third-typing-color);
     font-size: 15px;
     font-weight: 700;
-    padding: 15px 40px;
+    padding: 17px 40px;
     margin-top: 30px;
     background-color:var(--secondary-color);
     text-transform: uppercase;
-    transform: skewX(-10deg);
+    transform: skewX(-15deg);
     text-decoration: none;
 }
 
@@ -590,7 +596,6 @@ a.my-btn:hover::after{
     }
 
     .swiper-slide{
-        padding: 100px 0;
         height: auto;
     }
 
