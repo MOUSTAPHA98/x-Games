@@ -600,6 +600,11 @@ a.my-btn:hover::after{
 
 @media (max-width:992px){
 
+
+    .mini-font{
+        font-size: 50px !important;
+    }
+
     .flex-col-sb-c-md{
         display: flex;
         flex-direction: column;
