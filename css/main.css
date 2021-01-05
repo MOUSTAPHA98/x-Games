@@ -555,7 +555,8 @@ a.my-btn:hover::after{
 .game-info p{
     color: var(--first-typing-color);
     font-size: 16px;
-    line-height: 30px;
+    line-height: 40px;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .game-info span{
@@ -636,25 +637,12 @@ a.my-btn:hover::after{
         transform: skewX(0);
     }
 
-    .game-info h6{
-        text-transform: uppercase;
-        color: var(--secondary-color);
-        font-size: 18px;
-        font-weight: 700;
-    }
-    
     .game-info h2{
-        font-size: 50px;
+        font-size: 60px;
         line-height: 50px;
         margin: 20px 0 ;
     }
     
-    .game-info p{
-        color: var(--secondary-typing-color);
-        line-height: 20px;
-        font-size: 14px;
-    }
-
     .swiper-slide-container{
         height: 600px;
     }

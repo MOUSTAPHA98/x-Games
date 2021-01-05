@@ -2,7 +2,7 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 0,
     effect: 'fade',
     autoplay: {
-        delay: 10000,
+        delay: 2000,
         disableOnInteraction: true,
     },
     loop: false,
