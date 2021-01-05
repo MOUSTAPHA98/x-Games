@@ -554,8 +554,8 @@ a.my-btn:hover::after{
 
 .game-info p{
     color: var(--first-typing-color);
-    text-shadow: 1px 1px 5px #000;
     line-height: 30px;
+    font-size: 16px;
 }
 
 .game-info span{
