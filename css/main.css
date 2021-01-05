@@ -411,7 +411,7 @@ p{
 
 .navbar-collapse.show,
 .navbar-collapse.collapsing{
-    margin-top: 40px;
+    padding: 1.5rem 0;
 }
 
 
@@ -445,6 +445,10 @@ p{
     -o-animation: rotating 100s linear infinite;
 }
 
+.swiper-slide{
+    background-size: cover !important;
+    background-position: center !important;
+}
 
 .swiper-slide:nth-of-type(1){
     background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/cb2077.jpg), center no-repeat;
