@@ -36,4 +36,8 @@ var swiper = new Swiper('.product-swiper', {
     delay: 3000,
     disableOnInteraction: true,
   },
+  navigation: {
+    nextEl: '.product-button-next',
+    prevEl: '.product-button-prev',
+  },
 });
