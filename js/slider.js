@@ -17,7 +17,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 var swiper = new Swiper('.product-swiper', {
-  loop: false,
+  loop: true,
   breakpoints: {
     640: {
       slidesPerView: 2,
