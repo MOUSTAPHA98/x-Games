@@ -335,27 +335,29 @@ p{
 
 .navbar{
     background-color: var(--primary-color) !important;
-    padding: 0rem 2.5%;
+}
+
+.navbar .fixed-top{
+    padding: 1000px;
 }
 
 .navbar-brand span{
-    color: var(--secondary-color) !important;
+    color: var(--primary-typing-color) !important;
     font-family: "Oxanium";
     font-weight: 800;
     text-transform: uppercase;
     font-size: 18px;
+    line-height: 20px;
 }
 
 
-.navbar-brand i{
-    color: var(--secondary-color);
-    font-size: 50px !important;
-    margin: 10px;
+.navbar-brand img{
+    width: 60px;
 }
 
 .navbar-light .navbar-nav .nav-link{
     color: var(--primary-typing-color);
-    padding: 15px 30px;
+    padding: 13px 25px;
     text-transform: uppercase;
     font-weight: 700;
     font-family: "Oxanium";
@@ -617,8 +619,7 @@ a.my-btn:hover::after{
     color: var(--secondary-typing-color);
     line-height: 30px;
     font-size: 16px;
-    width: 80%;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 .product-swiper{
@@ -640,7 +641,7 @@ a.my-btn:hover::after{
     width: 100%;
     height: 100%;
     background-color: var(--sixth-color);
-    padding: 50px 20px;
+    padding: 30px 20px 20px 20px;
 }
 
 .product-img{
@@ -650,7 +651,7 @@ a.my-btn:hover::after{
 .product-category{
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 72.5%;
     transform: translate(-50%, -150%) skew(-10deg);
 
 }
@@ -660,7 +661,7 @@ a.my-btn:hover::after{
     font-size: 12px;
     color: var(--fourth-color);
     font-weight: 800;
-    padding: 10px 40px;
+    padding: 7px 25px;
     text-transform: uppercase;
 
 }
