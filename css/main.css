@@ -20,6 +20,7 @@
     --third-color: #1C181E;
     --fourth-color: #161417;
     --fifth-color: #131014;
+    --sixth-color: #1E1B20;
 
     --primary-typing-color:#FFF;
     --secondary-typing-color:#a5a5a5;
@@ -76,7 +77,7 @@ body{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 p{
@@ -109,6 +110,13 @@ p{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.flex-col-sb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .full-h{
@@ -585,31 +593,132 @@ a.my-btn:hover::after{
 /*===========  REL> GAMES S.  ============*/
 /*========================================*/
 
-.released-games-container{
-    color: #000;
-    padding: 75px 0;
+
+.gaimg-products-corner{
+    background-color: var(--third-color);
 }
 
-.released-games-container .sec-heading h2{
+.gaimg-products-corner-container .sec-heading{
+    padding: 100px 0 50px 0;
+}
+
+.gaimg-products-corner-container .sec-heading h2{
     font-family: "Oxanium";
     font-weight: 900;
-    font-size: 32px;
+    font-size: 36px;
+    letter-spacing: -2px;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: var(--primary-typing-color);
 }
 
-.released-games-container .sec-heading h2 span{
+.gaimg-products-corner-container .sec-heading h2 span{
     color: var(--secondary-color);
 }
 
-.released-games-container .sec-heading p{
-    color: var(--fourth-typing-color);
+.gaimg-products-corner-container .sec-heading p{
+    color: var(--secondary-typing-color);
     line-height: 30px;
     font-size: 16px;
     width: 80%;
     margin: 10px auto;
 }
 
+.product-swiper{
+    padding: 50px 0 100px 0;
+    overflow: hidden;
+}
+
+.swiper-slide.product{
+    position: relative;
+    background: #141217 !important;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: grab;
+}
+
+.product-info{
+    width: 100%;
+    height: 100%;
+    background-color: var(--sixth-color);
+    padding: 50px 20px;
+}
+
+.product-img{
+    min-height: 200px;
+}
+
+.product-category{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -150%) skew(-10deg);
+
+}
+
+.product-category span{
+    background-color: var(--secondary-color);
+    font-size: 12px;
+    color: var(--fourth-color);
+    font-weight: 800;
+    padding: 10px 40px;
+    text-transform: uppercase;
+
+}
+.product-name a{
+    color: var(--primary-typing-color);
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Oxanium";
+}
+
+.product-name a:hover{
+    color: var(--secondary-color);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+
+.product-price{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Oxanium";
+}
+
+
+.add-cart-btn{
+    background-color: transparent;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+
+}
+
+.add-cart-btn i{
+    color: var(--secondary-color);
+    font-size: 16px;
+    margin-left: -3px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+.add-cart-btn:hover{
+    background-color: var(--secondary-color);
+}
+
+.add-cart-btn:hover.add-cart-btn i{
+    color: var(--third-typing-color);
+}
 
 
 /*=======================================*/
@@ -673,6 +782,8 @@ a.my-btn:hover::after{
     .rotate-img{
         transform: translate(-10%, 0%);
     }
+
+    
 
 
 }

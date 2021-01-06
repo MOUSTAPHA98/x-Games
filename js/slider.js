@@ -1,17 +1,39 @@
 var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 0,
-    effect: 'fade',
-    autoplay: {
-        delay: 7000,
-        disableOnInteraction: true,
+  spaceBetween: 0,
+  effect: 'fade',
+  autoplay: {
+      delay: 7000,
+      disableOnInteraction: true,
+  },
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+var swiper = new Swiper('.product-swiper', {
+  loop: false,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40,
     },
-    loop: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    1218: {
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },    
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+});
