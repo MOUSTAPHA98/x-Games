@@ -85,6 +85,10 @@ p{
     margin: 0;
 }
 
+.invisible{
+    visibility: hidden;
+}
+
 .flex-row-sb-c{
     display: flex;
     flex-direction: row;
@@ -280,7 +284,7 @@ p{
 .AD-bar{
     background-color: var(--secondary-color);
     color: var(--third-typing-color);
-    padding: 13px 0;
+    /* padding: 13px 0; */
 }
 
 .AD-bar p{
@@ -290,12 +294,14 @@ p{
 }
 
 .AD-bar span{
+    display: inline-block;
     color: var(--primary-typing-color);
     background-color: var(--third-typing-color);
     font-size: 20px;
     font-weight: 700;
-    padding: 13px 24px;
-    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    padding: 12px 24px;
+    margin: 0 5px;
+    transform: skewX(-10deg) ;
 
 }
 

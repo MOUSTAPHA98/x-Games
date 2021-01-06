@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
@@ -26,7 +27,7 @@
     <!--   ===============================  START AD BAR   ===============================   -->
     <!--   ===============================================================================   -->
 
-    <div class="AD-bar d-none d-lg-block">
+    <div class="AD-bar d-none d-lg-block ">
         <div class="my-container-fluid">
             <div class="AD-bar-container flex-row-sb-c flex-col-sb-c-md">
                 <div class="d-none d-lg-flex">
@@ -142,8 +143,8 @@
                             </p>
                             <a href="" class="my-btn">read more</a>
                         </div>
-                        <div class="game-img d-none d-lg-block">
-                            <img class="full-h" src="images/char/cp077.png" alt="">
+                        <div class="game-img d-none d-lg-block ">
+                            <img class=" full-h" src="images/char/cp077.png">
                         </div>
                     </div>
                 </div>
@@ -165,8 +166,8 @@
                             </p>
                             <a href="" class="my-btn">read more</a>
                         </div>
-                        <div class="game-img d-none d-lg-block">
-                            <img class="full-h" src="images/char/cod.png" alt="">
+                        <div class="game-img d-none d-lg-block ">
+                            <img class="full-h" src="images/char/cod.png">
                         </div>
                     </div>
                 </div>
@@ -263,14 +264,18 @@
 
 
             <div class="my-container">
-                <div class="sec-heading">
-                    <h2>GAMING PRODUCTS <span>CORNER</span></h2>
-                    <p>
-                        Compete with 100 players on a remote island for winner takes showdown <br> known issue where certain skin strategic
-                    </p>
-                    <span>
-                        <img src="images/bar-y.png" alt="">
-                    </span>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="sec-heading mb-40">
+                            <h2>GAMING PRODUCTS <span>CORNER</span></h2>
+                            <p>
+                                Compete with 100 players on a remote island for winner takes showdown known issue where certain skin strategic
+                            </p>
+                            <span>
+                                <img src="images/bar-y.png" alt="">
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -475,6 +480,10 @@
     <script src="js/slider.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/preload.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     
 </body>
 </html>
