@@ -284,7 +284,6 @@ p{
 .AD-bar{
     background-color: var(--secondary-color);
     color: var(--third-typing-color);
-    /* padding: 13px 0; */
 }
 
 .AD-bar p{
@@ -486,28 +485,28 @@ p{
 }
 
 .swiper-slide:nth-of-type(1){
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/cb2077.jpg), center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/cb2077.jpg) center no-repeat;
     background-size: cover !important;
 
 }
 
 .swiper-slide:nth-of-type(2){
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/cod.jpg), center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/cod.jpg) center no-repeat;
     background-size: cover !important;
 }
 
 .swiper-slide:nth-of-type(3){
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/fort.jpg), center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/fort.jpg) center no-repeat;
     background-size: cover !important;
 }
 
 .swiper-slide:nth-of-type(4){
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/gta.jpg), center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/gta.jpg) center no-repeat;
     background-size: cover !important;
 }
 
 .swiper-slide:nth-of-type(5){
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/pubg.jpg), center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, var(--secondary-color) 150%), url(../images/slider/pubg.jpg) center no-repeat;
     background-size: cover !important;
 }
 
