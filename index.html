@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1c1121">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
@@ -39,10 +40,10 @@
                 </div>
                 <div class="contact-links flex-row-sb-c">
                     <div class="social-links">
-                        <a href="" class="s-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="" class="s-link"><i class="fab fa-twitter"></i></a>
-                        <a href="" class="s-link"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="" class="s-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a  class="s-link"><i class="fab fa-facebook-f"></i></a>
+                        <a  class="s-link"><i class="fab fa-twitter"></i></a>
+                        <a  class="s-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a  class="s-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="mail-link">
                         <a href="mailto:mmm066550@gmail.com" class="s-link"><i class="fal fa-envelope"></i>@mmm066550</a>
@@ -57,7 +58,7 @@
     <!--   ================================================================================   -->
 
     <nav id="mynav" class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand flex-row-sb-c" href="#">
+        <a href="index.html" class="navbar-brand flex-row-sb-c" >
             <img src="images/logo.svg" alt="">
             <span>
                 X-steam
@@ -74,47 +75,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             
-            
-
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" >Home <span class="sr-only">(current)</span></a>
             </li>
-
-            <li class="nav-item" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <a class="nav-link" href="#products">products</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
+                <a class="nav-link" >products</a>
             </li>
-
-            <!-- 
-                 data-toggle="collapse" data-target="#navbarSupportedContent"
-             -->
-
             <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" >blog</a>
             </li>
-
-            <li class="nav-item items-cart d-none d-lg-block">
-                <a class="nav-link" href="#">
+            <li class="nav-item">
+                <a class="nav-link" >contact</a>
+            </li>
+            <li id="products-cart-btn" class="nav-item items-cart d-none d-lg-block">
+                <a class="nav-link">
                     <i class="fad fa-cart-plus"></i>
                     <span class="cart-index flex-row-c-c">0</span>
                 </a>
             </li>
-
+            <li class="nav-item search-input d-none d-lg-block">
+                <a class="nav-link" >
+                    <i class="fad fa-search"></i>
+                </a>
+            </li>
           </ul>
         </div>
     </nav>
@@ -126,6 +109,52 @@
 
     <!-- Swiper -->
     <div class="swiper-container">
+
+        <div class="my-container products-cart d-none d-lg-flex">
+            <div class="products-cart-container cart-invisible">
+                <span id="empty-cart">
+                        no items in your cart
+                    </span>
+                <div class="products-list flex-col-sb-c">
+
+                    
+
+                    <!--  ===  START CART PRODUCT  ===  -->
+                    <!-- <div class="row cart-product">
+                        <div class=" col-lg-4 cart-product-img">
+                            <img class="img-fluid" src="images/product/laptop.png" alt="">
+                        </div>
+                        <div class=" col-lg-7 cart-product-info flex-col-fs">
+                            <span class="cart-product-name">
+                                Women Black T-shirt
+                            </span>
+                            <span class="cart-product-price">
+                                $29.00
+                            </span>
+                        </div>
+                        <div class="col-lg-1 cart-product-delete flex-row-c-c">
+                            <button class="delete-cart-btn">
+                                <i class="fal fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                    <!--  ===   END  CART PRODUCT  ===  -->
+
+                </div>
+
+                <div class="cart-divider"></div>
+                <div class="flex-col">
+                    <div class="cart-total-price-area flex-row-sb-c">
+                        <span>Total:</span>
+                        <span class="t-price">00.00 $</span>
+                    </div>
+                    
+                    <a  class="btn-cart">shoping cart</a>
+                    <a  class="btn-cart checkout">checkout</a>
+                </div>
+            </div>
+        </div>
+
         <div class="swiper-wrapper">
 
             <!--  ===  START SWIPER-SLIDE  ===  -->
@@ -141,10 +170,10 @@
                             <p>
                                 Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android
                             </p>
-                            <a href="" class="my-btn">read more</a>
+                            <a  class="my-btn">read more</a>
                         </div>
                         <div class="game-img d-none d-lg-block ">
-                            <img class=" full-h" src="images/char/cp077.png">
+                            <img class=" full-h" src="images/char/cp077.png" alt="none">
                         </div>
                     </div>
                 </div>
@@ -164,10 +193,10 @@
                             <p>
                                 Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android
                             </p>
-                            <a href="" class="my-btn">read more</a>
+                            <a  class="my-btn">read more</a>
                         </div>
-                        <div class="game-img d-none d-lg-block ">
-                            <img class="full-h" src="images/char/cod.png">
+                        <div class="game-img d-none d-lg-block">
+                            <img class="full-h" src="images/char/cod.png" alt="none">
                         </div>
                     </div>
                 </div>
@@ -187,7 +216,7 @@
                             <p>
                                 Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android
                             </p>
-                            <a href="" class="my-btn">read more</a>
+                            <a  class="my-btn">read more</a>
                         </div>
                         <div class="game-img d-none d-lg-block">
                             <img class="full-h" src="images/char/fort.png" alt="">
@@ -211,7 +240,7 @@
                             <p>
                                 Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android
                             </p>
-                            <a href="" class="my-btn">read more</a>
+                            <a  class="my-btn">read more</a>
                         </div>
                         <div class="game-img d-none d-lg-block">
                             <img class="full-h" src="images/char/gta.png" alt="">
@@ -234,7 +263,7 @@
                             <p>
                                 Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android
                             </p>
-                            <a href="" class="my-btn">read more</a>
+                            <a  class="my-btn">read more</a>
                         </div>
                         <div class="game-img d-none d-lg-block">
                             <img class="full-h" src="images/char/pubg.png" alt="">
@@ -243,7 +272,7 @@
                 </div>
             </div> -->
             <!--  ===  END SWIPER-SLIDE  ===  -->
-            
+
             </div>
 
             <div class="swiper-pagination"></div>
@@ -253,6 +282,8 @@
             <div class="swiper-button swiper-button-prev d-none d-lg-flex">
             <i class="fal fa-chevron-double-left"></i>
             </div>
+
+            
     </div>
 
     <!--   ==============================================================================   -->
@@ -287,7 +318,7 @@
                         <!-- Start Product -->
                         <div class="swiper-slide product flex-col-sb-c">
                             <div class="product-img">
-                                <img class="img-fluid" src="images/product/ts.jpg" alt="">
+                                <img class="img-fluid" src="images/product/ts.png" alt="">
                             </div>
                             <div class="product-category">
                                 <span>
@@ -296,13 +327,13 @@
                             </div>
                             <div class="product-info flex-col-sb">
                                 <div class="product-name">
-                                    <a href="">
+                                    <a >
                                         Women Black T-shirt
                                     </a>
                                 </div>
                                 <div class="product-buy flex-row-sb-c">
                                     <span class="product-price">
-                                        $29.00
+                                        35.00 $
                                     </span>
                                     <button class="add-cart-btn flex-row-c-c">
                                         <i class="far fa-cart-plus"></i>
@@ -315,7 +346,7 @@
                         <!-- Start Product -->
                         <div class="swiper-slide product flex-col-sb-c">
                             <div class="product-img">
-                                <img class="img-fluid" src="images/product/xbox.jpg" alt="">
+                                <img class="img-fluid" src="images/product/xbox.png" alt="">
                             </div>
                             <div class="product-category">
                                 <span>
@@ -324,13 +355,13 @@
                             </div>
                             <div class="product-info flex-col-sb">
                                 <div class="product-name">
-                                    <a href="">
+                                    <a >
                                         Gears 5 Xbox Controller
                                     </a>
                                 </div>
                                 <div class="product-buy flex-row-sb-c">
                                     <span class="product-price">
-                                        $29.00
+                                        80.00 $
                                     </span>
                                     <button class="add-cart-btn flex-row-c-c">
                                         <i class="far fa-cart-plus"></i>
@@ -343,7 +374,7 @@
                         <!-- Start Product -->
                         <div class="swiper-slide product flex-col-sb-c">
                             <div class="product-img">
-                                <img class="img-fluid" src="images/product/gpu.jpg" alt="">
+                                <img class="img-fluid" src="images/product/gpu.png" alt="">
                             </div>
                             <div class="product-category">
                                 <span>
@@ -352,13 +383,13 @@
                             </div>
                             <div class="product-info flex-col-sb">
                                 <div class="product-name">
-                                    <a href="">
+                                    <a >
                                         GeForce RTX 2070
                                     </a>
                                 </div>
                                 <div class="product-buy flex-row-sb-c">
                                     <span class="product-price">
-                                        $29.00
+                                        290.00 $
                                     </span>
                                     <button class="add-cart-btn flex-row-c-c">
                                         <i class="far fa-cart-plus"></i>
@@ -371,7 +402,7 @@
                         <!-- Start Product -->
                         <div class="swiper-slide product flex-col-sb-c">
                             <div class="product-img">
-                                <img class="img-fluid" src="images/product/vr.jpg" alt="">
+                                <img class="img-fluid" src="images/product/vr.png" alt="">
                             </div>
                             <div class="product-category">
                                 <span>
@@ -380,13 +411,13 @@
                             </div>
                             <div class="product-info flex-col-sb">
                                 <div class="product-name">
-                                    <a href="">
+                                    <a >
                                         Virtual Reality Smiled
                                     </a>
                                 </div>
                                 <div class="product-buy flex-row-sb-c">
                                     <span class="product-price">
-                                        $29.00
+                                        120.00 $
                                     </span>
                                     <button class="add-cart-btn flex-row-c-c">
                                         <i class="far fa-cart-plus"></i>
@@ -408,13 +439,13 @@
                             </div>
                             <div class="product-info flex-col-sb">
                                 <div class="product-name">
-                                    <a href="">
+                                    <a >
                                         Lenovo Legion 540
                                     </a>
                                 </div>
                                 <div class="product-buy flex-row-sb-c">
                                     <span class="product-price">
-                                        $299.00
+                                        299.00 $
                                     </span>
                                     <button class="add-cart-btn flex-row-c-c">
                                         <i class="far fa-cart-plus"></i>
@@ -436,13 +467,13 @@
                             </div>
                             <div class="product-info flex-col-sb">
                                 <div class="product-name">
-                                    <a href="">
+                                    <a >
                                         Astro Gaming A40 TR
                                     </a>
                                 </div>
                                 <div class="product-buy flex-row-sb-c">
                                     <span class="product-price">
-                                        $29.00
+                                       65.00 $
                                     </span>
                                     <button class="add-cart-btn flex-row-c-c">
                                         <i class="far fa-cart-plus"></i>
@@ -480,6 +511,7 @@
     <script src="js/slider.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/preload.js"></script>
+    <script src="js/cart.js"></script>
     <!-- <script src="js/wow.min.js"></script> -->
     <!-- <script>
         new WOW().init();

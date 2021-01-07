@@ -39,11 +39,11 @@
 }
   
 ::-webkit-scrollbar-track {
-    background: var(--secondary-color);
+    background: var(--primary-color);
 }
   
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     height: 10px;
 }
 
@@ -79,12 +79,12 @@ body{
 
 a{
     text-decoration: none !important;
+    cursor:  pointer !important;
 }
 
 p{
     margin: 0;
 }
-
 
 .flex-row-sb-c{
     display: flex;
@@ -119,6 +119,12 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.flex-col-fs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .full-h{
@@ -401,19 +407,24 @@ p{
     position: relative;
 }
 
-.nav-item.items-cart a i{
-    font-size: 18px;
+.nav-item.items-cart a{
+    cursor: pointer;
+}
+
+.nav-item a i{
+    font-size: 20px;
 }
 
 .cart-index{
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 2px;
+    right: 9px;
     background-color: var(--secondary-color);
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
     color: var(--third-typing-color);
+    padding-top: 3.5px;
 }
 
 .dropdown-item{
@@ -447,6 +458,12 @@ p{
     padding: 1.5rem 0;
 }
 
+.search-input .nav-link:hover, .items-cart .nav-link:hover,
+.search-input .nav-link:hover, .items-cart .nav-link:focus{
+    background-color: transparent !important;
+    color: var(--primary-typing-color) !important;
+    transform: skewX(0) !important;
+}
 
 /*=====================================*/
 /*===========  SLIDER HERO  ===========*/
@@ -718,7 +735,164 @@ a.my-btn:hover::after{
     color: var(--third-typing-color);
 }
 
+.delete-cart-btn:focus,
+.add-cart-btn:focus{
+    outline: 0;
+    border: 0;
+}
 
+
+/*=======================================*/
+/*===========  Products Cart  ===========*/
+/*=======================================*/
+
+.swiper-container{
+    position: relative;
+}
+.products-cart{
+    padding: 15px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.products-cart-container{
+    background-color: var(--primary-color);
+    padding: 25px;
+    box-shadow: 0px 12px 24px 0px rgba(120, 120, 120, 0.3);
+    transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+}
+
+#empty-cart{
+    width: 100%;
+    padding: 10px 0;
+    padding-right: 10px;
+    color: var(--secondary-typing-color);
+    text-transform: uppercase;
+    border-right: 5px solid var(--secondary-color);
+}
+
+
+.cart-invisible{
+    visibility: hidden;
+    opacity: 0;
+}
+
+    
+.products-list{
+    max-height: 465px !important;
+    overflow-y: scroll;
+}
+
+.cart-product{
+    margin: 10px 0;
+}
+
+.products-cart-container .row .cart-product-info{
+    width: 200px;
+    padding: 0 12px;
+}
+
+.products-cart-container .row .cart-product-img{
+    background-color: #291B35;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.products-cart-container .row .cart-product-delete{
+    padding: 0;
+}
+
+.cart-product-name a{
+    color: var(--primary-typing-color);
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Oxanium";
+}
+
+.cart-product-price{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Oxanium";
+}
+
+.delete-cart-btn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+
+}
+
+.delete-cart-btn i{
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.cart-divider{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #291B35;
+    height: .5px;
+}
+
+.cart-total-price-area{
+    padding:  20px 0;
+    width: 100%;
+
+}
+
+.cart-total-price-area span{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary-typing-color);
+}
+
+.btn-cart{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    color: var(--third-typing-color);
+    margin: 5px 0;
+    padding: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-cart:hover{
+    background-color: var(--secondary-color);
+    color: var(--third-typing-color);
+}
+
+.checkout{
+    font-weight: 300;
+    background-color: #291B35;
+    color: var(--primary-typing-color);
+    margin-bottom: 10px;
+}
+
+.checkout:hover{
+    font-weight: 300;
+    background-color: #291B35;
+    color: var(--primary-typing-color);
+    margin-bottom: 10px;
+}
 /*=======================================*/
 /*===========  MEDIA QUERIES  ===========*/
 /*=======================================*/

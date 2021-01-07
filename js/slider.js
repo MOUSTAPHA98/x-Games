@@ -37,10 +37,10 @@ var swiper = new Swiper('.product-swiper', {
       spaceBetween: 20,
     },    
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: true,
+  // },
   navigation: {
     nextEl: '.product-button-next',
     prevEl: '.product-button-prev',
