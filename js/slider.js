@@ -1,8 +1,12 @@
 var swiper = new Swiper('.swiper-container', {
   spaceBetween: 0,
+  keyboard: true,
   effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   autoplay: {
-      delay: 5000,
+      delay: 8000,
       disableOnInteraction: true,
   },
   loop: false,
