@@ -5,6 +5,10 @@ productsCartBtn.addEventListener('click', event => {
     productsCartContainer.classList.toggle("cart-invisible");
   });
 
+productsCartContainer.addEventListener('mouseleave', event => {
+    productsCartContainer.classList.add("cart-invisible");
+});
+
 
 
 var addProductToCartBtn = document.querySelectorAll(".add-cart-btn");

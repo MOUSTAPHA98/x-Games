@@ -14,10 +14,10 @@
 /*===================================*/
 
 :root{
-    --primary-color: #1c1121;
+    --primary-color: #1C181E;
     --primary-color-transparent: #1C11219d;
     --secondary-color: #E3A102;
-    --third-color: #1C181E;
+    --third-color: #141217;
     --fourth-color: #161417;
     --fifth-color: #131014;
     --sixth-color: #1E1B20;
@@ -150,6 +150,28 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+/*=================================*/
+/*===========  BTT  ===========*/
+/*=================================*/
+
+
+#myBtn {
+    background-color: var(--secondary-color);
+    z-index: 3;
+    display: none; 
+    position: fixed; 
+    bottom: 25px; 
+    right: 25px;
+    cursor: pointer;
+}
+
+#myBtn i{
+    font-size: 18px;
+    color: var(--primary-color);
+    padding: 11px 12px;
+
 }
 
 /*=================================*/
@@ -308,7 +330,7 @@ p{
 }
 
 .contact-links a{
-    color: var(--third-typing-color);
+    color: var(--primary-color);
 }
 
 .social-links{
@@ -612,7 +634,7 @@ a.my-btn:hover::after{
 /*==========================================*/
 
 .gaimg-products-corner-container{
-    background-color: var(--third-color);
+    background-color: var(--primary-color);
     padding: 100px 0;
     position: relative;
 }
@@ -645,7 +667,7 @@ a.my-btn:hover::after{
 
 .swiper-slide.product{
     position: relative;
-    background: #141217 !important;
+    background: var(--third-color);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-radius: 2px;
@@ -801,7 +823,7 @@ a.my-btn:hover::after{
 }
 
 .products-cart-container .row .cart-product-img{
-    background-color: #291B35;
+    background-color: var(--third-color);
     max-width: 100px;
     max-height: 100px;
     margin: 0;
@@ -882,17 +904,18 @@ a.my-btn:hover::after{
 
 .checkout{
     font-weight: 300;
-    background-color: #291B35;
+    background-color: var(--third-color);
     color: var(--primary-typing-color);
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .checkout:hover{
     font-weight: 300;
-    background-color: #291B35;
+    background-color: var(--third-color);
     color: var(--primary-typing-color);
     margin-bottom: 10px;
 }
+
 /*=======================================*/
 /*===========  MEDIA QUERIES  ===========*/
 /*=======================================*/
