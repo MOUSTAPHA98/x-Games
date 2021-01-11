@@ -1,4 +1,5 @@
 var swiper = new Swiper('.swiper-container', {
+  loop: true,
   spaceBetween: 0,
   keyboard: true,
   effect: 'fade',
@@ -6,10 +7,9 @@ var swiper = new Swiper('.swiper-container', {
     crossFade: true
   },
   autoplay: {
-      delay: 10000,
+      delay: 6000,
       disableOnInteraction: false,
   },
-  loop: false,
   // pagination: {
   //   el: '.swiper-pagination',
   //   clickable: true,
@@ -19,6 +19,8 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
 
 var swiper = new Swiper('.product-swiper', {
   loop: true,
@@ -44,5 +46,28 @@ var swiper = new Swiper('.product-swiper', {
   navigation: {
     nextEl: '.product-button-next',
     prevEl: '.product-button-prev',
+  },
+});
+
+
+
+
+
+var swiper = new Swiper('.released-games-swiper', {
+  loop: true,
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1200: {
+      direction: 'vertical',
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },    
   },
 });
