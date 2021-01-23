@@ -862,9 +862,9 @@ a.my-btn:hover::after{
 }
 
 .cart-divider{
-    margin-top: 10px;
+    margin: 8px 0;
     width: 100%;
-    background-color: #291B35;
+    background-color: var(--third-typing-color);
     height: .5px;
 }
 
